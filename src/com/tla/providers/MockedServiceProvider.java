@@ -115,8 +115,7 @@ public class MockedServiceProvider implements IServiceProvider {
                 results.add("a");
             }
 
-            JsonNode mockedResponse = Json.toJson(results);
-
+            JSONObject json = new JSONObject(results);
             serviceResponse.setResponse();
         }
         catch (Exception e) {
